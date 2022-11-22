@@ -1,7 +1,17 @@
+@import "../styles/colors.css";
+
 body {
-    background-color: #10FFFF;
+    background-color: var(--cpt-base);
+    color: var(--cpt-text);
 }
 
-div {
-    background-color: #000000;
+.center {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.centerMargins {
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,6 +1,7 @@
 @import "../styles/colors.css";
 
 body {
+    margin: 0px 0px 50px 0px;
     background-color: var(--cpt-base);
     color: var(--cpt-text);
 }

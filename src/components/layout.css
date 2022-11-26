@@ -1,9 +1,10 @@
 @import "../styles/colors.css";
 
 body {
-    margin: 0px 0px 50px 0px;
+    margin: 0px;
     background-color: var(--cpt-base);
     color: var(--cpt-text);
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .center {

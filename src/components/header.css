@@ -1,0 +1,13 @@
+@import "../styles/colors.css";
+
+.header {
+    margin-left: 15px;
+    margin-top: 15px;
+    position: fixed;
+    top: 0px;
+}
+
+.header img {
+    width: 64px;
+    height: auto;
+}

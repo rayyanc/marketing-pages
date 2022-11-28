@@ -5,8 +5,8 @@ export { Head } from "../components/layout";
 
 export default function Page() {
     return (
-        <Layout title="OurVoice For Students">
-            <div className="center">
+        <Layout title="OurVoice For Students" headerText="OurVoice For Students">
+            <div className="center" style={{ "paddingLeft": "20%", "paddingRight": "20%" }}>
                 <h1>Cost</h1>
                 <p>At OurVoice we believe quality software shouldn’t break the bank. That's why we only charge 8 cents a month for student accounts.</p>
 

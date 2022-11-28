@@ -1,13 +1,23 @@
 @import "../styles/colors.css";
 
 .header {
-    margin-left: 15px;
-    margin-top: 15px;
-    position: fixed;
-    top: 0px;
+    list-style-type: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    background-color: var(--cpt-mantle);
+    overflow: hidden;
 }
 
 .header img {
+    position: absolute;
+    height: 64px;
     width: 64px;
-    height: auto;
+    float: left;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+.header h1 {
+    text-align:center;
+    margin: 10px;
 }

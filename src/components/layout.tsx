@@ -13,12 +13,18 @@ export function Head() {
     );
 }
 
-export default function Layout({ title, children }: { title: string, children: JSX.Element }) {
+interface Props {
+    title: string,
+    hideHeader?: boolean;
+    headerText?: string,
+    children: JSX.Element,
+}
+
+export default function Layout({ title, hideHeader, headerText, children }: Props ) {
     document.title = title;
-    // Header coming soon:tm:
     return (
         <main>
-            <Header />
+            <Header hide={hideHeader} text={headerText} />
             {children}
             <Footer />
         </main>

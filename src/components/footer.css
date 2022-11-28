@@ -8,13 +8,13 @@
     margin-left: 15px;
 }
 
-ul {
+.socials ul, .nav ul {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
 }
 
-a {
+.socials a, .nav a {
     color: var(--cpt-text);
     text-decoration: none;
 }
@@ -40,6 +40,6 @@ a {
     text-align: center;
 }
 
-a:hover {
+.socials a:hover, .nav a:hover {
     color: var(--cpt-subtext0);
 }

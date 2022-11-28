@@ -8,12 +8,12 @@ export { Head } from "../components/layout";
 
 // Add fade or some animation so this doesn't look garbage
 function BannerLogo() {
-    const [ margin, setMargin ] = React.useState("");
+    const [ margin, setMargin ] = React.useState({ top: "", bottom: "" });
     var logoStyle = {
         maxWidth: "75%",
         height: "auto",
-        marginTop: margin,
-        marginBottom: margin,
+        marginTop: margin.top,
+        marginBottom: margin.bottom,
     };
 
     const ref = React.useRef();
@@ -25,7 +25,8 @@ function BannerLogo() {
             if (ref == null)
                 return;
             var m: number = window.innerHeight / 2 - ref.current?.offsetHeight / 2;
-            setMargin(m.toString() + "px" );
+            // 8 px difference because of some weird spacing that comes from nowhere
+            setMargin({ top: m.toString() + "px", bottom: (m - 8).toString() + "px" });
         }
 
         window.addEventListener("resize", sizeMargins);
@@ -41,7 +42,7 @@ function BannerLogo() {
 export default function Page() {
     // Definitely need like actual content here. No clue what to put!
     return (
-        <Layout title="OurVoice Technologies">
+        <Layout title="OurVoice Technologies" hideHeader={true}>
             <div className="center">
                 <BannerLogo />
             </div>

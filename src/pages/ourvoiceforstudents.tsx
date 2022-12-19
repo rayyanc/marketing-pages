@@ -1,12 +1,57 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import Chart from "../images/chart.png";
 
 export { Head } from "../components/layout";
+
+function Charts() {
+    const [ margin, setMargin ] = React.useState({ top: "", bottom: "" });
+    var logoStyle = {
+        maxWidth: "75%",
+        height: "auto",
+        marginTop:10,
+        marginBottom: 5,
+    };
+
+    const ref = React.useRef();
+
+    // TODO: Add debounce so this isn't running at the max speed of the eventLoop
+    // This whole thing just centers the logo vertically
+    React.useEffect( () => {
+        function sizeMargins() {
+            if (ref == null)
+                return;
+            var m: number = window.innerHeight / 2 - ref.current?.offsetHeight / 2;
+            // 8 px difference because of some weird spacing that comes from nowhere
+            setMargin({ top: m.toString() + "px", bottom: (m - 8).toString() + "px" });
+        }
+
+        window.addEventListener("resize", sizeMargins);
+
+        setTimeout(sizeMargins, 100);
+    }, [ref]);
+
+    return (
+        <img src={Chart} alt="logo" style={logoStyle} ref={ref} />
+    );
+}
 
 export default function Page() {
     return (
         <Layout title="OurVoice For Students" headerText="OurVoice For Students">
             <div className="center" style={{ "paddingLeft": "20%", "paddingRight": "20%" }}>
+                <Charts/>
+                <ul>
+                <h3>According to research at the Quaglia Institute for School Voice and Aspirations (QISVA)</h3>
+                <li>'You can give your students a voice for less than a quarter of the price of a single #2 pencil.</li> 
+                <li>More than ⅔ of students feel uncomfortable sharing suggestions or concerns directly with their teachers'(<a href="https://www.quagliainstitute.org/uploads/legacy/Student_Voice_Grades_6-12_Decade_of_Data_Report.pdf">(QISVA)</a>). </li>
+                </ul>
+                <br />
+                <br />  
+                <br />
+                <br />
+                <br />
+                <br />       
                 <h1>Cost</h1>
                 <p>At OurVoice we believe quality software shouldn’t break the bank. That's why we only charge 8 cents a month for student accounts.</p>
 

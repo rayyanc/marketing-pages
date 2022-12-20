@@ -12,6 +12,7 @@ export default function Page() {
 
                 <h1>How We Started</h1>
                 <p>OurVoice Technologies was started with one simple mission: To empower students with their own voices. Students often feel unheard or have no way to speak their minds. At OurVoice we want to change that.</p>
+                <table></table>
             </div>
         </Layout>
     );

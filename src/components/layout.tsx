@@ -12,13 +12,7 @@ export function Head() {
         </>
     );
 }
-export function employe() {
-    return (
-        <>
-            <link rel="icon" href={icon} type="image/x-icon" />
-        </>
-    );
-}
+
 interface Props {
     title: string,
     hideHeader?: boolean;

@@ -51,7 +51,8 @@ export default function Page() {
                 <br />
                 <br />
                 <br />  
-                <br />    
+                <br /> 
+                <h1>Features</h1>   
                 <h1>Cost</h1>
                 <p>At OurVoice we believe quality software shouldn’t break the bank. That's why we only charge 8 cents a month for student accounts.</p>
 

@@ -1,6 +1,15 @@
 @import "../styles/colors.css";
-@font-face { font-family: Akira; src: url('../fonts/Akira\ Expanded\ Demo.otf'); } 
-@font-face { font-family: coolvtica; src: url('../fonts/coolvetica\ condensed\ rg.otf'); }
+
+@font-face {
+    font-family: Akira;
+    src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+@font-face {
+    font-family: coolvtica;
+    src: url('../fonts/coolvetica\ condensed\ rg.otf');
+}
+
 body {
     margin: 0px;
     background-color: var(--cpt-base);
@@ -9,61 +18,62 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+img {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
 main {
+    width: auto;
+    height: auto;
+    position: relative;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-  
+
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-/*div{
-    width: auto;
-    height: auto; 
-    position: relative;
-    animation: mymove 3s ease-in 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes mymove {
     from {
         top: 200px;
+        opacity: 0;
     }
 
     to {
         top: 0px;
+        opacity: 1;
     }
+
 }
 
-fix the added animation thing it completely fucks the page lol good luck
-
-*/
 
 .center {
     display: inline-block;
     text-align: center;
     width: 100%;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
 }
 
 .centerMargins {
     margin-left: auto;
     margin-right: auto;
 }
+
 h1 {
     margin: 40px 0px 10px 0px;
     text-align: center;
 
 }
-h3 { font-family: Akira; }
+
+h3 {
+    font-family: Akira;
+}
+
 ul {
     list-style-type: none;
 }
@@ -72,39 +82,44 @@ ul {
     display: inline-block;
     text-align: left;
     width: 100%;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
 }
 
 .employes {
-  height: 90vh;
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
 }
+
 .employe {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  padding: 4rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem;
 }
 
 .texts {
     height: 90vh;
     margin: 2rem;
     display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows: 1fr 1fr 1fr ;
-  }
-  .text {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.text {
     color: black;
     font-size: 3rem;
     text-align: left;
     padding: 4rem;
 }
- 
-li{
+
+li p {
     font-family: coolvitca;
 }

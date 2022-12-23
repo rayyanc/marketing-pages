@@ -5,6 +5,7 @@ import Chart from "../images/chart.png";
 export { Head } from "../components/layout";
 
 function Charts() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [ margin, setMargin ] = React.useState({ top: "", bottom: "" });
     var logoStyle = {
         maxWidth: "75%",
@@ -14,7 +15,6 @@ function Charts() {
     };
 
     const ref = React.useRef();
-
     // TODO: Add debounce so this isn't running at the max speed of the eventLoop
     // This whole thing just centers the logo vertically
     React.useEffect( () => {

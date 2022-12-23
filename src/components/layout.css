@@ -1,5 +1,6 @@
 @import "../styles/colors.css";
-
+@font-face { font-family: Akira; src: url('../fonts/Akira\ Expanded\ Demo.otf'); } 
+@font-face { font-family: coolvtica; src: url('../fonts/coolvetica\ condensed\ rg.otf'); }
 body {
     margin: 0px;
     background-color: var(--cpt-base);
@@ -21,7 +22,28 @@ main {
     100% {
         opacity: 1;
      }
-} 
+}
+/*div{
+    width: auto;
+    height: auto; 
+    position: relative;
+    animation: mymove 3s ease-in 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes mymove {
+    from {
+        top: 200px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+fix the added animation thing it completely fucks the page lol good luck
+
+*/
 
 .center {
     display: inline-block;
@@ -38,11 +60,14 @@ main {
 }
 h1 {
     margin: 40px 0px 10px 0px;
-}
+    text-align: center;
 
+}
+h3 { font-family: Akira; }
 ul {
     list-style-type: none;
 }
+
 .left-align {
     display: inline-block;
     text-align: left;
@@ -64,4 +89,22 @@ ul {
   font-size: 3rem;
   text-align: center;
   padding: 4rem;
+}
+
+.texts {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr ;
+  }
+  .text {
+    color: black;
+    font-size: 3rem;
+    text-align: left;
+    padding: 4rem;
+}
+ 
+li{
+    font-family: coolvitca;
 }

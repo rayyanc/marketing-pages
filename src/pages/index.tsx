@@ -43,8 +43,11 @@ export default function Page() {
     // Definitely need like actual content here. No clue what to put!
     return (
         <Layout title="OurVoice Technologies" hideHeader={true}>
+            
             <div className="center">
-                <BannerLogo />
+            
+                <div className="ting"><BannerLogo /></div>
+            
             </div>
         </Layout>
     );

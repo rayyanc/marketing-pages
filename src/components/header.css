@@ -1,5 +1,5 @@
 @import "../styles/colors.css";
-
+face { font-family: Akira; src: url('../fonts/Akira\ Expanded\ Demo.otf'); }
 .header {
     list-style-type: none;
     margin: 0px 0px 15px 0px;
@@ -20,4 +20,6 @@
 .header h1 {
     text-align:center;
     margin: 10px;
+    font-family: Arkira;
+
 }

@@ -123,3 +123,8 @@ ul {
 li p {
     font-family: coolvitca;
 }
+
+.test {
+    font-family: Cormorant;
+    src: url("../fonts/Cormorant-VariableFont_wght.ttf")
+}

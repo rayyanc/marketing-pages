@@ -45,7 +45,7 @@ export default function Page() {
         <Layout title="OurVoice Technologies" hideHeader={true}>
             
             <div className="center">
-                <p>By students for students</p>
+                <p className="test">By students for students</p>
                 <div className="ting"><BannerLogo /></div>
                 
             </div>

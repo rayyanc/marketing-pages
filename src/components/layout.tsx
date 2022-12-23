@@ -1,5 +1,5 @@
 import React from "react";
-import Favicon from "../images/favicon.ico";
+import Favicon from "../images/neoicon.png";
 import Header from "./header";
 import Footer from "./footer";
 import "./layout.css";
@@ -8,7 +8,7 @@ import "./layout.css";
 export function Head() {
     return (
         <>
-            <link rel="icon" href={Favicon} type="image/x-icon" />
+            <link rel="icon" href={Favicon} type="image/neoicon" />
         </>
     );
 }

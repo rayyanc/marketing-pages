@@ -13,17 +13,25 @@
     --cpt-sapphire: #74c7ec;
     --cpt-blue: #89b4fa;
     --cpt-lavender: #b4befe;
-    --cpt-text: #cdd6f4;
+    --cpt-text: #8e8d8a;
     --cpt-subtext1: #bac2de;
-    --cpt-subtext0: #a6adc8;
+    --cpt-subtext0: #e85a4f;
     --cpt-overlay2: #9399b2;
     --cpt-overlay1: #7f849c;
     --cpt-overlay0: #6c7086;
     --cpt-surface2: #585b70;
     --cpt-surface1: #45475a;
     --cpt-surface0: #313244;
-    --cpt-base: #1e1e2e;
-    --cpt-mantle: #181825;
+    --cpt-base: #eae7dc;
+    --cpt-mantle: #eae7dc;
     --cpt-crust: #11111b;
 }
 
+/*
+#eae7dc //light tan back ground////
+#d8c3a5 //dark tan 
+#8e8d8a //darkish gray
+#e98074 // light red
+#e85a4f //dark red
+
+*/

@@ -4,6 +4,7 @@ import icon from "../images/icon.png";
 import icon1 from "../images/icon1.png";
 import icon2 from "../images/icon2.png";
 import icon3 from "../images/icon3.png";
+import icon4 from "../images/icon4.png";
 export { Head } from "../components/layout";
 
 export default function Page() {
@@ -13,7 +14,7 @@ export default function Page() {
 
                 <div className="employes" style={{ "paddingLeft": "5%", "paddingRight": "0%" }}>
                     <div className=".employe">
-                        <img src="" alt="icon" width="500px" height="500px" />
+                        <img src={icon4} alt="icon" width="200px" height="200px" />
                         <h3>Carson</h3>
                         <h4>CEO</h4>
                     </div>

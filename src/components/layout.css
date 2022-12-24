@@ -73,7 +73,7 @@ main {
     animation: fadein2Animation ease-in 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
 
 @keyframes fadein2Animation {

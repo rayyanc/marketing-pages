@@ -24,3 +24,9 @@ face { font-family: Akira; src: url('../fonts/Akira\ Expanded\ Demo.otf'); }
 
 }
 
+.header link {
+    text-align:center;
+    margin: 10px;
+    font-family: Arkira;
+
+}

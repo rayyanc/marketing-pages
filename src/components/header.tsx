@@ -3,11 +3,7 @@ import { Link } from "gatsby";
 import Logo from "../images/logo.png";
 import "./header.css";
 
-import { MarkGithubIcon, MailIcon } from "@primer/octicons-react";
-interface Props {
-    hide?: boolean,
-    text?: string,
-}
+
 
 export default function Header({ hide, text }: Props) {
     if (hide || text == null)
@@ -21,6 +17,7 @@ export default function Header({ hide, text }: Props) {
         <ul className="header">
             <li><Link to="/"><img src={Logo} alt="logo" /></Link></li>
             <li><h1>{text}</h1></li>
+
             
         </ul>
     );

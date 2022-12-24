@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import Chart from "../images/chart.png";
+import Chart from "../images/stat.png";
 
 export { Head } from "../components/layout";
 
@@ -100,3 +100,17 @@ export default function Page() {
         </Layout >
     );
 }
+/*
+priority:----------
+1.animation speed remove second animation//
+
+2. make the our voice smaller//
+
+can do Next:-----------
+1.add some content
+2. chose a different color
+
+last:----------
+1.check grammar
+2. move option to the top
+*/

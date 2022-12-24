@@ -18,9 +18,15 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-img {
-    width: auto;
-    height: auto;
+little-ting {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
     position: relative;
 }
 
@@ -137,4 +143,9 @@ p {
 .test {
     font-family: Cormorant;
     src: url("../fonts/Cormorant-VariableFont_wght.ttf")
+}
+
+big-ting{
+    width: auto;
+    height: auto;
 }

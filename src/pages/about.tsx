@@ -1,6 +1,8 @@
 import * as React from "react";
 import Layout from "../components/layout";
-
+import icon from "../images/icon.png";
+import icon1 from "../images/icon1.png";
+import icon2 from "../images/icon2.png";
 export { Head } from "../components/layout";
 
 export default function Page() {
@@ -18,7 +20,7 @@ export default function Page() {
                         <p>insert bio</p>
                     </div>
                     <div className=".employe">
-                        <img src="" alt="icon" width="500px" height="500px" />
+                        <img src="" alt="icon" width="200px" height="200px" />
                         <h3>Mathew MCcoy</h3>
                         <h4>CMO of OurVoice Technologies</h4>
                     </div>
@@ -26,7 +28,7 @@ export default function Page() {
                         <p>insert bio</p>
                     </div>
                     <div className=".employe">
-                        <img src="" alt="icon"></img>
+                        <img src={icon2} alt="icon"/>
                         <h3>Abel Semahegn</h3>
                         <h4>CTO of OurVoice Technologies</h4>
                     </div>
@@ -34,9 +36,9 @@ export default function Page() {
                         <p>insert bio</p>
                     </div>
                     <div className=".employe">
-                        <img src="../images/icon.png" alt="icon" width="500px" height="500px" />
+                        <div className="little-ting"><img src={icon} alt="icon" /></div>
                         <h3>Aidan Williams</h3>
-                        <h4>insert title</h4>
+                        <h4>Chief Architect</h4>
                     </div>
                     <div className=".employe">
                         <p>insert bio</p>
@@ -51,7 +53,7 @@ export default function Page() {
                     </div>
 
                     <div className=".employe">
-                        <img src="" alt="icon" width="500px" height="500px" />
+                        <img src={icon1} alt="icon" width="500px" height="500px" />
                         <h3>Stephen</h3>
                         <h4>insert title</h4>
                     </div>

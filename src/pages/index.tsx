@@ -8,7 +8,7 @@ export { Head } from "../components/layout";
 
 // Add fade or some animation so this doesn't look garbage
 function BannerLogo() {
-    const [ margin, setMargin ] = React.useState({ top: "", bottom: "" });
+    const [margin, setMargin] = React.useState({ top: "", bottom: "" });
     var logoStyle = {
         maxWidth: "75%",
         height: "auto",
@@ -20,7 +20,7 @@ function BannerLogo() {
 
     // TODO: Add debounce so this isn't running at the max speed of the eventLoop
     // This whole thing just centers the logo vertically
-    React.useEffect( () => {
+    React.useEffect(() => {
         function sizeMargins() {
             if (ref == null)
                 return;
@@ -43,14 +43,22 @@ export default function Page() {
     // Definitely need like actual content here. No clue what to put!
     return (
         <Layout title="OurVoice Technologies" hideHeader={true}>
-            
+
             <div className="center">
-                <p className="test">By students for students</p>
-                <div className="ting"><BannerLogo /></div>
-                
+                <div className="big-ting">
+                    <p className="test">By students for students</p>
+                    <BannerLogo />
+
+                </div>
             </div>
-            
+
         </Layout>
-        
+
     );
 }
+
+
+//implement 
+// image size on about and home and the 
+// implement this: https://codepen.io/joyshaheb/pen/gOwOGQE
+// fix up text

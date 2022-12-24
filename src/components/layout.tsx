@@ -2,6 +2,7 @@ import React from "react";
 import Favicon from "../images/neoicon.png";
 import Header from "./header";
 import Footer from "./footer";
+
 import "./layout.css";
 
 // NOTE: This does not automatically apply, because this is a component, you have to explicitly export { Head } from "../components/layout"

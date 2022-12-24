@@ -70,9 +70,9 @@ main {
     width: auto;
     height: auto;
     position: relative;
-    animation: fadein2Animation ease-in 5s;
+    animation: fadein2Animation ease-out 5s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
     animation-delay: 6s;
 }
 

@@ -102,9 +102,9 @@ export default function Page() {
 }
 /*
 priority:----------
-1.animation speed remove second animation//
+1.animation speed remove second animation// done
 
-2. make the our voice smaller//
+2. make the our voice smaller//done
 
 can do Next:-----------
 1.add some content

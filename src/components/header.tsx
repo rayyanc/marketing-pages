@@ -24,4 +24,5 @@ export default function Header({ hide, text }: Props) {
             
         </ul>
     );
+    
 }

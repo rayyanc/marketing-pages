@@ -49,7 +49,8 @@ export default function Page() {
 
                     </ul>
                 </div>
-                <div className="center" style={{ "paddingLeft": "20%", "paddingRight": "20%" }}><Charts />
+                <div className="center" style={{ "paddingLeft": "20%", "paddingRight": "20%"}}>
+                    <div className="auto-formater"><Charts  /></div>
                     <h1>*More than ⅔ of students feel uncomfortable sharing suggestions or concerns directly with their teachers</h1>
                 </div>
                 <div className="text">

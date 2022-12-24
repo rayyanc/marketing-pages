@@ -18,23 +18,14 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-little-ting {
-    width: 100px;
-    height: 100px;
-    position: relative;
-}
 
-.icon{
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
+
 
 main {
     width: auto;
     height: auto;
     position: relative;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -52,6 +43,50 @@ main {
 
 }
 
+.p2 {
+    width: auto;
+    height: auto;
+    position: relative;
+    animation: fadeoutAnimation ease-in-out 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeoutAnimation {
+    from{
+        top: 0px;
+        opacity: 1;
+
+    }
+    to{
+        top:-500px;
+        opacity: 0;
+    }
+
+}
+
+.p3 {
+    width: auto;
+    height: auto;
+    position: relative;
+    animation: fadein2Animation ease-in 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein2Animation {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+
+    to {
+        top: -600px;
+        opacity: 1;
+    }
+
+
+}
 
 .center {
     display: inline-block;
@@ -99,23 +134,24 @@ ul {
     height: 90vh;
     margin: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
 }
 
 .employe {
-    color: white;
+
     font-size: 3rem;
     text-align: center;
-    padding: 4rem;
+    padding: 14rem;    
 }
 
 .texts {
     height: 90vh;
     margin: 1rem;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  1fr 1fr 1fr;
 
 }
 
@@ -137,15 +173,13 @@ p {
     font-size: 19px;
 }
 
-.tab {
-    margin-left: 40px;
-}
+
 .test {
     font-family: Cormorant;
     src: url("../fonts/Cormorant-VariableFont_wght.ttf")
 }
 
-big-ting{
+auto-formater{
     width: auto;
     height: auto;
 }

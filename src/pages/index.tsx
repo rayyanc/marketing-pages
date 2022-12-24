@@ -45,11 +45,16 @@ export default function Page() {
         <Layout title="OurVoice Technologies" hideHeader={true}>
 
             <div className="center">
-                <div className="big-ting">
-                    <p className="test">By students for students</p>
-                    <BannerLogo />
 
-                </div>
+
+                    <div className="p2"><BannerLogo /></div>
+                    <div className="p3">
+                        <h1>Hello, and welcome to OurVoice ! 🤩</h1>
+                        <p>We are in the business of giving people a voice.</p>
+
+
+                    </div>
+
             </div>
 
         </Layout>
@@ -59,6 +64,6 @@ export default function Page() {
 
 
 //implement 
-// image size on about and home and the 
-// implement this: https://codepen.io/joyshaheb/pen/gOwOGQE
+
+
 // fix up text

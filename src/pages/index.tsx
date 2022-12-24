@@ -10,8 +10,8 @@ export { Head } from "../components/layout";
 function BannerLogo() {
     const [margin, setMargin] = React.useState({ top: "", bottom: "" });
     var logoStyle = {
-        maxWidth: "75%",
-        height: "auto",
+        maxWidth: "30%",
+        height: "30%",
         marginTop: margin.top,
         marginBottom: margin.bottom,
     };
@@ -47,13 +47,12 @@ export default function Page() {
             <div className="center">
 
 
-                    <div className="p2"><BannerLogo /></div>
-                    <div className="p3">
-                        <h1>Hello, and welcome to OurVoice ! 🤩</h1>
-                        <p>We are in the business of giving people a voice.</p>
+                <div className="p2"><BannerLogo /></div>
+                <div className="p3">
+                    <h1>Hello, and welcome to OurVoice ! 🤩</h1>
+                    <p>We are in the business of giving people a voice.</p>
+                </div>
 
-
-                    </div>
 
             </div>
 

@@ -25,7 +25,7 @@ main {
     width: auto;
     height: auto;
     position: relative;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -47,9 +47,10 @@ main {
     width: auto;
     height: auto;
     position: relative;
-    animation: fadeoutAnimation ease-in-out 10s;
+    animation: fadeoutAnimation ease-out 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 5s;
 }
 
 @keyframes fadeoutAnimation {
@@ -59,7 +60,7 @@ main {
 
     }
     to{
-        top:-500px;
+        top:-900px;
         opacity: 0;
     }
 
@@ -69,9 +70,10 @@ main {
     width: auto;
     height: auto;
     position: relative;
-    animation: fadein2Animation ease-in 15s;
+    animation: fadein2Animation ease-in 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 5s;
 }
 
 @keyframes fadein2Animation {

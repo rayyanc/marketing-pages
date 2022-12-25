@@ -60,7 +60,7 @@ main {
 
     }
     to{
-        top:-900px;
+        top:-600px;
         opacity: 0;
     }
 
@@ -72,7 +72,7 @@ main {
     position: relative;
     animation: fadein2Animation ease-out 5s;
     animation-iteration-count: 1;
-    animation-fill-mode: backwards;
+    animation-fill-mode:both;
     animation-delay: 6s;
 }
 
